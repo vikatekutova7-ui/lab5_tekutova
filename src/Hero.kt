@@ -66,5 +66,8 @@ class Hero {
         this.showStats()
         opponent.showStats()
     }
+    fun isAlive(): Boolean{
+        return hp>0
+    }
 
 }

@@ -9,7 +9,7 @@ fun main() {
     naruto.sayHello()
     naruto
     val suzuke: Hero = Hero()
-    suzuke.name = "Саске Учиха"
+    suzuke.name = "Саске  Учиха"
     suzuke.hp = 300
     suzuke.mp = 100
     suzuke.role = "Шиноби-отступник"
@@ -35,6 +35,9 @@ fun main() {
     enemy.name = "Враг"
     enemy.hp = 50
     println("Name: ${enemy.name}\nHP: ${enemy.hp}")
+    val hero1 = Hero(name = "артур", hp=100)
+    println("герой жив? ${hero1.isAlive()}")
+
 
 
 

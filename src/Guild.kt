@@ -1,5 +1,7 @@
 fun main() {
-    val quest = Quest()
+    val quest = Quest(title="охота на гоблинов", duration=2, reward=3400, difficulty="легкий")
+    quest.printInfo()
+
     print("Введите название квеста: ")
     val title = readln()
     print("Введите время выполнения в часах: ")
@@ -13,5 +15,6 @@ fun main() {
     quest.reward = reward
     quest.difficulty = difficulty
     println("Название квеста: ${quest.title}\nВремя выполнения: ${quest.duration}\nНаграда: ${quest.reward} золотых\nУровень сложности: ${quest.difficulty}")
-
+    val quest2 = Quest(title="побег из замка", duration=5, reward = 700, difficulty="сложный")
+    println("квест сложный? ${quest2.isHard()}")
 }
