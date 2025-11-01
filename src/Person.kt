@@ -1,3 +1,6 @@
+import characters.Enemy
+import characters.Hero
+
 fun main() {
     val naruto: Hero = Hero()
     naruto.name = "Наруто Узумаки"
@@ -35,10 +38,4 @@ fun main() {
     enemy.name = "Враг"
     enemy.hp = 50
     println("Name: ${enemy.name}\nHP: ${enemy.hp}")
-    val hero1 = Hero(name = "артур", hp=100)
-    println("герой жив? ${hero1.isAlive()}")
-
-
-
-
 }

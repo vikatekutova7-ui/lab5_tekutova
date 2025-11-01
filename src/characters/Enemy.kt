@@ -1,12 +1,14 @@
-class Enemy {
-    var name: String = "Враг"
-    var hp: Int = 50
-    var element: String = " Огонь"
-    constructor(name: String, hp: Int, element: String){
-        this.name = name
-        this.hp = hp
-        this.element = element
-    }
+package characters
+
+class Enemy (
+    name: String = "Враг",
+    hp: Int = 50,
+    element: String = " Огонь"):GameCharacter(name, hp, element){
+//    constructor(name: String, hp: Int, element: String){
+//        this.name = name
+//        this.hp = hp
+//        this.element = element
+//    }
     fun takeDamage(amount: Int){
         println("$name получает урон")
         hp-=amount
@@ -19,5 +21,4 @@ class Enemy {
     fun die(){
         println("враг побежден")
     }
-
     }

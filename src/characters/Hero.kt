@@ -1,11 +1,13 @@
-class Hero {
-    var name: String = "Undefined"
-    var gender: String = "не указан"
-    var role: String = "бродяга"
-    var hp: Int = 100
-    var mp: Int = 50
-    var level: Int = 1
-    var element: String = "Огонь"
+package characters
+
+class Hero (
+    var name: String = "Undefined",
+    var gender: String = "не указан",
+    var role: String = "бродяга",
+    var hp: Int = 100,
+    var mp: Int = 50,
+    var level: Int = 1,
+    var element: String = "Огонь"){
     fun sayHello(){
         println("Всем привет, мое имя - $name")
     }

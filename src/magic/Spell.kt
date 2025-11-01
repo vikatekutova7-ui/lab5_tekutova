@@ -1,8 +1,12 @@
+package magic
+
+import MagicEffect
 class Spell(
-    val name: String="",
+    name: String,
     val  width: Int=0,
     val height: Int=0,
-    val symbol: String="") {
+    symbol: String
+): MagicEffect(name, symbol, duration = 10) {
 
     constructor():
             this (name="", width = 0, height = 0, symbol = "")
